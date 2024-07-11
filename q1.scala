@@ -28,7 +28,7 @@ object q1{
         checkStockAvailability(item,req) match{
             case -1 => println("No Item Found")
             case -2 => println("Stock is not enough")
-            case x => subFromStock(x,req);println("Stock updated")
+            case x => subFromStock(x,req);println("Substracted the qty and Stock was updated")
         }
     }
     
@@ -36,7 +36,7 @@ object q1{
        
         displayInventory(items,qty)
         restockItem("Chocolate",100)
-        sellItem("Biscuits",25)
+        sellItem("Chocolate",25)
         displayInventory(items,qty)
         
     }
